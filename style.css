@@ -1,0 +1,47 @@
+@font-face {
+    font-family: KdamThmorPro;
+    src: url(KdamThmorPro-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: KdamThmorPro;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+}
+
+.content,
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.picture {
+    background-image: url(auto.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 40vw;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0 , .7);
+    position: relative;
+    top: 15vh;
+    padding: 0 25px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.gtr {
+    height: 15vh;
+}
+
+
