@@ -9,56 +9,60 @@
 </head>
 <body>
     
-    <div class="content">
-        
+    <div class="container">
         <div class="picture">
             <div class="logo">
                 <img src="logo.png" alt="logo" class="gtr">
-                <h1 class="nissan">Nissan</h1>
+                <p>Nissan</p>
             </div>
         </div>
         <div class="right">
-            <div class="long-text">
-                <p>This is not a real online service! You know you need something</p>
-                <p>like this in your life to help you realize your deepest dreams.</p>
-                <p>You <em>know</em> you want to.</p>
+            <div class="header-text left">
+                <p>This is a real online service! You know you need something like this in
+                    your life to help you realize your deepest dreams. Sign up 
+                    <em>now</em> to get started
+                    <p class="remote-text">You know you want to</p>
+                </p>
             </div>
             <form action="#">
-                <div class="form-left">
+                <div class="form left">
                     <p class="title">Let's do this!</p>
                     <div class="input">
-                        <div class="input">
-                            <label for="first-name">first name</label>
-                            <input type="text" id="first-name" required>
-                        </div>
-                        <div class="input">
-                            <label for="last-name">last name</label>
-                            <input type="text" id="last-name" required>
-                        </div>
-                        <div class="input">
-                            <label for="email">email</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div class="input">
-                            <label for="phone-number">phone number</label>
-                            <input type="number" id="phone-number" required>
-                        </div>
-                        <div class="input">
-                            <label for="password">password</label>
-                            <input type="password" id="password" minlength="8" required>
-                        </div>
-                        <div class="input">
-                            <label for="confirm-password">confirm passsword</label>
-                            <input type="password" id="confirm-password" minlength="8" required>
-                        </div>
+                        <label for="first-name">first name</label>
+                        <input type="text" id="first-name">
+                    </div>
+                    <div class="input">
+                        <label for="last-name">last name</label>
+                        <input type="text" id="last-name">
+                    </div>
+                    <div class="input">
+                        <label for="email">email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="input">
+                        <label for="phone-number">phone number</label>
+                        <input type="number" id="phone-number">
+                    </div>
+                    <div class="input">
+                        <label for="password">password</label>
+                        <input type="password" id="password">
+                    </div>
+                    <div class="input">
+                        <label for="confirm-password">confirm password</label>
+                        <input type="password" id="confirm-password">
                     </div>
                 </div>
-                <div class="left button"><button type="submit">Create Account</button></div>
             </form>
-            <div class="log-in left"><p>Already have an account? <a href="#">Log in</a></p></div>
+            <div class="bottom left">
+                <button class="createAccount">Create Account</button>
+                <p class="error"></p>
+                <p>Already have and account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
 
+<!--Script JS-->
+<script src="app.js"></script>
 </body>
 </html>
 

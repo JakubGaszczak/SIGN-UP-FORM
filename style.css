@@ -10,38 +10,125 @@
     font-family: KdamThmorPro;
 }
 
-.content {
+body {
     height: 100vh;
     width: 100vw;
-}
-
-.content,
-.logo {
-    display: flex;
-    flex-flow: row wrap;
 }
 
 .picture {
     background-image: url(auto.jpg);
     background-position: center;
-    background-size: 100%;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover;
     width: 40vw;
+    height: 100vh;
 }
 
 .logo {
-    background-color: rgba(0, 0, 0 , .7);
-    position: relative;
-    top: 15vh;
-    padding: 0 25px;
-
+    background-color: rgb(0, 0, 0, .6);
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20%;
+}
+
+.logo p {
+    color: white;
+    font-size: 3rem;
+}
+
+.container,
+.logo {
+    display: flex;
 }
 
 .gtr {
     height: 15vh;
 }
 
+/* Right */
+
+.right {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left {
+    padding-left: 3rem;
+}
+
+
+.header-text {
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+.remote-text {
+    margin: 30px 0 80px;
+}
+
+.title {
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.form {
+    background-color: grey;
+    padding-bottom: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-flow: column;
+        text-align: center;
+    }
+    .picture {
+        width: 100vw;
+    }
+    .right {
+        width: auto;
+        height: auto;
+    }
+    .form {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .input {
+        text-align: center;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    input {
+        width: 70vw;
+    }
+    .left {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .header-text {
+        margin-top: 30px;
+        width: auto;
+    }
+}
 
